@@ -1,5 +1,6 @@
 package gisapp.demo.security.jwt;
 
+import java.security.Key;
 import java.util.Date;
 
 import org.slf4j.Logger;
@@ -10,6 +11,8 @@ import org.springframework.stereotype.Component;
 
 import gisapp.demo.security.services.UserDetailsImpl;
 import io.jsonwebtoken.*;
+import io.jsonwebtoken.io.Decoders;
+import io.jsonwebtoken.security.Keys;
 
 @Component
 public class JwtUtils {

@@ -1,4 +1,4 @@
-package gisapp.demo.playload.response;
+package gisapp.demo.payload.response;
 
 public class MessageResponse {
     private String message;

@@ -1,4 +1,4 @@
-package gisapp.demo.playload.request;
+package gisapp.demo.payload.request;
 
 import java.util.Set;
 

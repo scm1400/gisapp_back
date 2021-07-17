@@ -1,4 +1,4 @@
-package gisapp.demo.playload.response;
+package gisapp.demo.payload.response;
 
 import java.util.List;
 
