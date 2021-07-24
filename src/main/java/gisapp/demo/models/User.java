@@ -1,6 +1,8 @@
 package gisapp.demo.models;
 
+import java.util.ArrayList;
 import java.util.HashSet;
+import java.util.List;
 import java.util.Set;
 
 import javax.persistence.*;
@@ -35,6 +37,9 @@ public class User {
 
     public User() {
     }
+
+//    @OneToMany(mappedBy = "users", cascade = CascadeType.MERGE, orphanRemoval = true)
+//    private List<Board> board = new ArrayList<>();
 
     public User(String username, String email, String password) {
         this.username = username;
