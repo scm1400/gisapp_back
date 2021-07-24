@@ -46,6 +46,23 @@ public class Board {
     @Column(name = "counts")
     private Integer counts;
 
+    public Board() {
+        super();
+    }
+
+    public Board(String type, String title, String contents, Integer memberNo, Date createdTime, Date updatedTime,
+                 Integer likes, Integer counts) {
+        super();
+        this.type = type;
+        this.title = title;
+        this.contents = contents;
+        this.memberNo = memberNo;
+        this.createdTime = createdTime;
+        this.updatedTime = updatedTime;
+        this.likes = likes;
+        this.counts = counts;
+    }
+
     public Long getNo() {
         return no;
     }
@@ -116,6 +133,13 @@ public class Board {
 
     public void setCounts(Integer counts) {
         this.counts = counts;
+    }
+
+    @Override
+    public String toString() {
+        return "Board [no=" + no + ", type=" + type + ", title=" + title + ", contents=" + contents + ", memberNo="
+                + memberNo + ", createdTime=" + createdTime + ", updatedTime=" + updatedTime + ", likes=" + likes
+                + ", counts=" + counts + "]";
     }
 
 }
